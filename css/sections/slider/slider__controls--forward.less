@@ -1,0 +1,43 @@
+// main: ../../style.less
+
+.slider__controls--forward::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/decorative-images/arrow-forward.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 3.2rem;
+  height: 1.1rem;
+  bottom: 0;
+  left: 0;
+}
+
+.slider__controls--forward:hover {
+  animation: slider__controls--forward 1s linear infinite;
+}
+@keyframes slider__controls--forward {
+  0% {
+      left:0;
+  }
+  50% {
+      left:10px;
+  }
+  100% {
+      left:0;
+  }
+}
+
+.slider__controls--forward:focus {
+  animation: slider__controls--forward 1s linear infinite;
+}
+@keyframes slider__controls--forward {
+  0% {
+      left:0;
+  }
+  50% {
+      left:10px;
+  }
+  100% {
+      left:0;
+  }
+}

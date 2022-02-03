@@ -1,0 +1,47 @@
+// main: ../../style.less
+
+.slider__controls--back {
+  margin-right: 1.25rem;
+}
+
+.slider__controls--back::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/decorative-images/arrow-back.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 3.2rem;
+  height: 1.1rem;
+  bottom: 0;
+  left: 0;
+}
+
+.slider__controls--back:hover {
+  animation: slider__controls--back 1s linear infinite;
+}
+@keyframes slider__controls--back {
+  0% {
+      right:0;
+  }
+  50% {
+      right:10px;
+  }
+  100% {
+      right:0;
+  }
+}
+
+.slider__controls--back:focus {
+  animation: slider__controls--back 1s linear infinite;
+}
+@keyframes slider__controls--back {
+  0% {
+      right:0;
+  }
+  50% {
+     right:10px;
+  }
+  100% {
+      right:0;
+  }
+}
